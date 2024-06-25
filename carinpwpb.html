@@ -1,0 +1,170 @@
+<html>
+<head>
+	<style>
+		* {
+			box-sizing: border-box;
+		}
+
+		body {
+			font-family: Arial;
+			padding: 10px;
+			background: #f1f1f1;
+		}
+
+		/* Header/Blog Title */
+		.header {
+			padding: 30px;
+			text-align: center;
+			background: #white;
+		}
+
+		.header h1 {
+			font-size: 50px;
+		}
+
+		/* Style the top navigation bar */
+		.topnav {
+			overflow: hidden;
+			background-color: #333;
+		}
+		/* Style the tovnav links*/
+		.topnav a {
+			float: left;
+			display: block;
+			color: #f2f2f2;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+		}
+
+		/*change color on hover */
+		.topnav a:hover {
+			background-color: #ddd;
+			color : black;
+		}
+
+		/* create two unequal columnsthat that floats next to each other */
+		/* left column */
+		.leftcolum {
+			float: left;
+			width: 75%;
+		}
+		/* Right colum */
+		.rightcolum {
+			float: left;
+			width: 25%;
+			background-color: #f1f1f1;
+			padding-left: 20px;
+		}
+		
+		/* Fake image */
+		.fakeing{
+			background-color: #aaa;
+			width: 100%;
+			padding: 20px;
+		}
+		/* add a card effect for articles */
+		.card{
+			background-color: white;
+			padding: 20px;
+			margin-top: 20px;
+		}
+		/* Clear float after the colum */
+		.row::after{
+			content: "";
+			display: table;
+			clear: both;
+		}
+		/* Footer */
+		.footer{
+			padding: 20px;
+			text-align: center;
+			background: #ddd;
+			margin-top: 20px;
+
+		}
+		/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on topof each other instead of next to each other */
+		@media screen and (max-widht: 800px){
+			.leftcolumn, .rightcolumn {
+				widht: 100%;
+				padding: 0;
+			}
+		}
+		/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+		@media screen and (max-widht: 400px){
+			.topnav a {
+				float: none;
+				width: 100%;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="header">
+		<h1>My Website</h1>
+		<p>SELAMAT DATANG DI WEBSITE CARIN ROSALINDA SEMOGA HARIMU MENYENANGKAN</p>
+	</div>
+
+	<div class="topnav">
+		<a href="#">Link</a>
+		<a href="#">Link</a>
+		<a href="#">Link</a>
+		<a href="#" style="float:right">Link</a>
+	</div>
+
+	<div class="row">
+		<div class="leftcolumn">
+			<div class="card">
+				<h2>KOALA</h2>
+				<h5>06 juni 2000</h5>
+				<img src="koala.jpg" style="height: 400px;" width="100%">
+				<p>KOALA</p>
+				<p>Koala juga masuk sebagai hewan khas Australia berkantung (marsupial) yang sangat terkenal setelah kanguru. Nama koala sendiri berasal dari bahasa Australia pribumi yang memiliki arti tidak minum. Hal ini merujuk dari sifat koala yang jarang terlihat sedang minum air.</p>
+			</div>
+		</div>
+	</div>
+			<div class="card">
+				<h2>PINGUIN</h2>
+				<h5>30 desember 1995</h5>
+				<img src="pinguin.jpg" style="height: 400px;" width="100%">
+				<p>PENGUINS</p>
+				<p>Penguin adalah burung yang tidak bisa terbang namun mereka bisa mencapai hingga 15 mil per jam di bawah air. Penguin memiliki sirip yang sekaligus sebagai sayap dan merupakan penyelam yang hebat. Di darat, penguin berayun-ayun tegak atau meluncur di atas perut mereka jika kondisi salju memungkinkan.</p>
+			</div>
+		</div>
+		<div class="row">
+		<div class="leftcolumn">
+			<div class="card">
+				<h2>GAJAH</h2>
+				<h5>28 febuary 2014</h5>
+				<img src="gajah.jpg" style="height: 400px;" width="100%">
+				<p>GAJAH</p>
+				<p>Gajah, liman, atau biram adalah mamalia besar dari famili Elephantidae dan ordo Proboscidea. Secara tradisional, terdapat dua spesies yang diakui, yaitu gajah afrika dan gajah asia, walaupun beberapa bukti menunjukkan bahwa gajah semak afrika dan gajah hutan afrika adalah spesies yang berbeda</p>
+			</div>
+		</div>
+	</div>
+		<div class="rightcolumn">
+			<div class="card">
+				<h2>About me</h2>
+				<img src="latihan.jpg" style="height: 600px;" width="100%">
+				<p>HALLO!! Nama Saya carin rosalinda, disini saya menganalisa tentang hewan hewan yang ada didunia ini. sebenarnya ada begitu banyak hewan yang tingal didunia, tidak hanya pinguin dan koala kalian bisa cari saja mengenai hewan yang ingin kamu ketahui di website saya agar kamu paham.<br></p>
+			</div>
+		</div>
+			<div class ="rightcolumn">
+			<div class="card">
+				<h3>Pupolar Post</h3>
+				<div class="fakeimage"><img src="macan.jpg"height="300px"width="100%"></div><br>
+				<div class="fakeimage"><img src="jerapah.jpeg"height="300px"width="100%"></div><br><br>
+				<div class="fakeimage"><img src="panda.jpeg"height="300px"width="100%"></div><br>s
+			</div>
+		</div>
+			<div class="card">
+				<h3>Follow Me</h3>
+				<p> untuk mengetahui secara detail ikuti saja website ini</p>
+			</div>
+		</div>
+	</div>
+	<div class="footer">
+		<h2>copyright &coppy; 2024 CARIN ROSALINDA,	 all right reserved</h2>
+	</div>
+</body>
+</html>
